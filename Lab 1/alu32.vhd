@@ -20,9 +20,11 @@ signal sum,diff : std_logic_vector(32 downto 0);
 
 begin
 
+--provide 33rd bit for carryout
 sum <= ('0'&A) + ('0'&B);
 diff <= ('0'&A) - ('0'&B);
 
+--operations as per lab spec
 with ALUCntl select
     ALUout <= (A and B) when "0000",
             (A or B) when "0001",
@@ -32,17 +34,20 @@ with ALUCntl select
             (A nor B) when "1100",
             (A and B) when others;
 
+--use 33rd bit from sum or diff respectively for *unsigned* operands
 with ALUCntl select
     carryout <= sum(32) when "0010",
                 diff(32) when "0110",
                 'Z' when others;
 
+--high when answer = 0
 with ALUout select
     zero <= '1' when "00000000000000000000000000000000",
     '0' when others;
     
+--high when we expect overflow for *signed* operands
 with ALUcntl select
-    overflow <= (not(A(31)) and not(B(31)) and ALUout(31)) or (A(31) and B(31) and not(ALUout(3))) when "0010",
+    overflow <= (not(A(31)) and not(B(31)) and ALUout(31)) or (A(31) and B(31) and not(ALUout(31))) when "0010",
                 (not(A(31)) and B(31) and ALUout(31)) or (A(31) and not(B(31)) and not(ALUout(31))) when "0110",
                 'Z' when others;
     

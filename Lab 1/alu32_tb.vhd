@@ -2,7 +2,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity alu32_tb is
---  Port ( );
 end alu32_tb;
 
 architecture Behavioral of alu32_tb is
@@ -18,15 +17,17 @@ component alu32 is
        Carryout : out STD_LOGIC);
 end component;
 
+--simulated input signals
 signal ta, tb, tout : std_logic_vector(31 downto 0);
-signal tci, tco, tz, tov : std_logic;
 signal tctl : std_logic_vector(3 downto 0);
+--simulated outputs
+signal tci, tco, tz, tov : std_logic;
 
 begin
 
  uut : alu32 port map ( 
-                        A=>ta, 
-                        B=>tb, 
+                        A => ta, 
+                        B => tb, 
                         ALUCntl => tctl, 
                         ALUout => tout, 
                         Carryin => tci,
@@ -36,11 +37,12 @@ begin
 
 stimulus : process
 
+--test based on lab spec
 begin
     --1
     ta <= X"FFFFFFFF"; tb <= X"00000000"; tci <= 'Z'; tctl <= "0000";
     wait for 10 ns;
-   --2 
+    --2 
     ta <= X"98989898"; tb <= X"89898989"; tci <= 'Z'; tctl <= "0001";
     wait for 10 ns;
     --3
@@ -73,6 +75,8 @@ begin
     --12
     ta <= X"89BCDE34"; tb <= X"C53BD687"; tci <= 'Z'; tctl <= "1111";
     wait for 10 ns;
+    --reset
+    ta <= X"00000000"; tb <= X"00000000"; tci <= 'Z'; tctl <= "0000";
     wait;
 end process;
 
