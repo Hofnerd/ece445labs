@@ -22,8 +22,14 @@ signal ALU_Result : std_logic_vector (31 downto 0);
 signal add_result,sub_result,a32,b32: std_logic_vector(32 downto 0);
 signal c32: std_logic_vector(32 downto 0):=(others=>'0');
 signal add_ov,sub_ov:std_logic;
+signal lt:std_logic_vector(31 downto 0);
+signal ltu:std_logic_vector(31 downto 0);
 
 begin
+
+   lt(0) <=  '1' when (signed(A) < signed(B)) else '0';
+   ltu(0) <=  '1' when (unsigned(A) < unsigned(B)) else '0';
+   
    with ALUCntl select
    ALU_Result <=add_result(31 downto 0) when "0010", --Add
                 sub_result(31 downto 0) when "0110", --sub
@@ -31,7 +37,10 @@ begin
                 A OR  B when "0001",
                 A XOR B when "0011",
                 A NOR B when "1100",
+                lt when "1111",
+                ltu when "1110",
                 A when others;---condition for all other alu control signals
+
 ALUOut  <= ALU_Result; 
 ----Addition Operation and carry out generation-----	
    a32   <='0'& A;
