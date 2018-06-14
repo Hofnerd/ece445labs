@@ -18,11 +18,19 @@ component DFFwEnable is
 end component;
 
 signal en : std_logic;
+signal pca : std_logic_vector(31 downto 0);
 
 begin
 
 en <= '1';
 
+checkreset:
+process(reset)
+begin
+if (reset = '1') then pca <= X"00000000"; 
+    else pca <= Din;
+end if;
+end process;
 
 gen_reg :
 
