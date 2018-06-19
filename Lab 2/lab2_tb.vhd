@@ -8,20 +8,20 @@ end lab2_tb;
 architecture tb of lab2_tb is
 
 	component lab2_wrapper is
-		port (
-        Dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
-        carryin : in STD_LOGIC;
-        carryout : out STD_LOGIC;
-        clk : in STD_LOGIC;
-        overflow : out STD_LOGIC;
-        reset : in STD_LOGIC;
-        zero : out STD_LOGIC
-        --pc_test : out STD_LOGIC_VECTOR ( 31 downto 0 );
-            --pcadd_test : out STD_LOGIC_VECTOR ( 31 downto 0 )
-      );
-	end component;
+  port (
+    clk : in STD_LOGIC;
+    reset : in STD_LOGIC;
+    carryin : in STD_LOGIC;
+    Dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    zero : out STD_LOGIC;
+    carryout : out STD_LOGIC;
+    overflow : out STD_LOGIC
+--    pc_test : out STD_LOGIC_VECTOR ( 31 downto 0 );
+--    pcadd_test : out STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component;
 
-	signal tDout, tpct, tpcaddt : std_logic_vector(31 downto 0);
+	signal tDout, tpct, tpcaddt: std_logic_vector(31 downto 0);
 	signal tci, tco, tclk, tof, treset, tz : std_logic;
 	constant clk_period : time := 20 ns;
 
@@ -34,8 +34,8 @@ begin
 			overflow => tof,
 			reset => treset,
 			zero => tz
-			--pc_test => tpct,
-			--pcadd_test => tpcaddt
+--			pc_test => tpct,
+--			pcadd_test => tpcaddt
 		);
 
 	clkprocess : process

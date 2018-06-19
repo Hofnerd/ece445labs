@@ -20,8 +20,13 @@ signal pca : std_logic_vector(31 downto 0);
 
 begin
 
+--    with reset select dout <=
+--        din when '0',
+--        X"00000000" when '1',
+--        X"11111111" when others;
+
 --checkreset:
---process(reset)
+--process(Din)
 --begin
 --if (reset = '1') then pca <= X"00000000"; 
 --    else pca <= Din;
