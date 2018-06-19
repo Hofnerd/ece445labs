@@ -9,5 +9,8 @@ end control;
 architecture behavior of control is
 
 begin
+	with Din select dout <=
+		'1' when "000000",
+		'0' when others;
 
-end behavior
+end behavior;
