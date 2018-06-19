@@ -11,16 +11,16 @@ architecture Behavioral of ALUcntl is
 begin
 
     with Fn select Cntl <=
-        "0010" when X"20", --add
-        "0010" when X"21", --addu
-        "0110" when X"22", --sub
-        "0110" when X"23", --subu
-        "0000" when X"24", --and
-        "0001" when X"25", --or
-        "0011" when X"26", --xor
-        "1100" when X"27", --nor
-        "1111" when X"2A", --slt
-        "1110" when X"2B", --sltu
+        "0010" when "100000", --add
+        "0010" when "100001", --addu
+        "0110" when "100010", --sub
+        "0110" when "100011", --subu
+        "0000" when "100100", --and
+        "0001" when "100101", --or
+        "0011" when "100110", --xor
+        "1100" when "100111", --nor
+        "1111" when "101010", --slt
+        "1110" when "101011", --sltu
         "0000" when others;
 
 end Behavioral;

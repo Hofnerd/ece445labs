@@ -16,19 +16,26 @@ component pcregister is
 		dout : out  std_logic_vector(31 downto 0));
 end component;
 
-signal en : std_logic;
 signal pca : std_logic_vector(31 downto 0);
 
 begin
 
-checkreset:
-process(reset)
-begin
-if (reset = '1') then pca <= X"00000000"; 
-    else pca <= Din;
-end if;
-end process;
+--checkreset:
+--process(reset)
+--begin
+--if (reset = '1') then pca <= X"00000000"; 
+--    else pca <= Din;
+--end if;
+--end process;
 
+process(clk)
+begin
+    if(clk'event) and (clk ='1') then 
+        if (reset = '1') then pca <= X"00000000";
+            else pca <= Din;
+        end if;
+    end if; 
+end process;
 
 pcr : pcregister port map ( Din => pca, clk=> clk, dout => Dout);
 end behavior;
