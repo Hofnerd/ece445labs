@@ -5,9 +5,9 @@ entity pcregister is
 	port  ( Din : in std_logic_vector(31 downto 0);
 		clk : in std_logic;
 		dout : inout  std_logic_vector(31 downto 0));
-end component;
+end pcregister;
 
-architecture behavior of pc is
+architecture behavior of pcregister is
 
 	component DFFwEnable is
 		Port (  D : in std_logic;

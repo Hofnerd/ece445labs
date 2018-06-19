@@ -21,5 +21,6 @@ begin
         "1100" when X"27", --nor
         "1111" when X"2A", --slt
         "1110" when X"2B", --sltu
+        "0000" when others;
 
 end Behavioral;
