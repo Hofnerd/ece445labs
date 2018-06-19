@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity pcregister is 
 	port  ( Din : in std_logic_vector(31 downto 0);
 		clk : in std_logic;
-		dout : inout  std_logic_vector(31 downto 0));
+		dout : out  std_logic_vector(31 downto 0));
 end pcregister;
 
 architecture behavior of pcregister is
@@ -13,7 +13,7 @@ architecture behavior of pcregister is
 		Port (  D : in std_logic;
 			En : in std_logic;
 			clk : in std_logic;
-			Q : inout std_logic );
+			Q : out std_logic );
 	end component;
 
 	signal en : std_logic;

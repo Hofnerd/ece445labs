@@ -5,7 +5,7 @@ entity pc is
     port ( 
             Din : in std_logic_vector(31 downto 0);
             reset, clk : in std_logic;
-            Dout: inout std_logic_vector(31 downto 0) );
+            Dout: out std_logic_vector(31 downto 0) );
 end pc;
 
 architecture behavior of pc is
@@ -14,13 +14,13 @@ component DFFwEnable is
     Port ( D : in STD_LOGIC;
            En : in STD_LOGIC;
            clk : in STD_LOGIC;
-           Q : inout STD_LOGIC );
+           Q : out STD_LOGIC );
 end component;
 
 component pcregister is 
 	port  ( Din : in std_logic_vector(31 downto 0);
 		clk : in std_logic;
-		dout : inout  std_logic_vector(31 downto 0));
+		dout : out  std_logic_vector(31 downto 0));
 end component;
 
 signal en : std_logic;

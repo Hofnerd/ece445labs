@@ -5,7 +5,7 @@ entity DFFwEnable is
     Port ( D : in STD_LOGIC;
            En : in STD_LOGIC;
            clk : in STD_LOGIC;
-           Q : inout STD_LOGIC );
+           Q : out STD_LOGIC );
 end DFFwEnable;
 
 architecture Behavioral of DFFwEnable is
