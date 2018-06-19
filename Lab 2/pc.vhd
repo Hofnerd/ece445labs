@@ -10,15 +10,24 @@ end pc;
 
 architecture behavior of pc is
 
-component pcregister is 
-	port  ( Din : in std_logic_vector(31 downto 0);
-		clk : in std_logic;
-		dout : out  std_logic_vector(31 downto 0));
-end component;
+--component pcregister is 
+--	port  ( Din : in std_logic_vector(31 downto 0);
+--		clk : in std_logic;
+--		dout : out  std_logic_vector(31 downto 0));
+--end component;
 
-signal pca : std_logic_vector(31 downto 0);
+--signal pca : std_logic_vector(31 downto 0);
 
 begin
+
+process(clk)
+begin
+    if(clk'event) and (clk = '1') then
+        if(reset ='1') then dout <= X"00000000";
+            else dout <= din;
+        end if;
+    end if;
+end process;
 
 --    with reset select dout <=
 --        din when '0',
@@ -33,14 +42,14 @@ begin
 --end if;
 --end process;
 
-process(clk)
-begin
-    if(clk'event) and (clk ='1') then 
-        if (reset = '1') then pca <= X"00000000";
-            else pca <= Din;
-        end if;
-    end if; 
-end process;
+--process(clk)
+--begin
+--    if(clk'event) and (clk ='1') then 
+--        if (reset = '1') then pca <= X"00000000";
+--            else pca <= Din;
+--        end if;
+--    end if; 
+--end process;
 
-pcr : pcregister port map ( Din => pca, clk=> clk, dout => Dout);
+--pcr : pcregister port map ( Din => pca, clk=> clk, dout => Dout);
 end behavior;
