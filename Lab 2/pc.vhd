@@ -17,12 +17,16 @@ component DFFwEnable is
            Q : inout STD_LOGIC );
 end component;
 
+component pcregister is 
+	port  ( Din : in std_logic_vector(31 downto 0);
+		clk : in std_logic;
+		dout : inout  std_logic_vector(31 downto 0));
+end component;
+
 signal en : std_logic;
 signal pca : std_logic_vector(31 downto 0);
 
 begin
-
-en <= '1';
 
 checkreset:
 process(reset)
@@ -32,14 +36,6 @@ if (reset = '1') then pca <= X"00000000";
 end if;
 end process;
 
-gen_reg :
 
-for i in 0 to 31 generate
-regx : DFFwEnable Port map (D => Din(i),
-                            clk => clk,
-                            En => en,
-                            Q => Dout(i));
-                            
-end generate;
-
+pcr : pcregister port map ( Din => pca, clk=> clk, dout => Dout);
 end behavior;
