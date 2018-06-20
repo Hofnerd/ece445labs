@@ -1,0 +1,7 @@
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+ERROR: Index 55 out of bound 0 to 51
+Time: 270 ns  Iteration: 3  Process: /lab2_tb/comp/lab2_i/instmem_0/U0/line__29
+  File: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/instmem.vhd
+
+HDL Line: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/instmem.vhd:29

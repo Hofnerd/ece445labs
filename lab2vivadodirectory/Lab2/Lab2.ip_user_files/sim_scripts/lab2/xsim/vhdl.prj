@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/lab2/ip/lab2_pcadd_1_0/sim/lab2_pcadd_1_0.vhd" \
+"../../../bd/lab2/ip/lab2_instmem_0_0/sim/lab2_instmem_0_0.vhd" \
+"../../../bd/lab2/ip/lab2_control_0_0/sim/lab2_control_0_0.vhd" \
+"../../../bd/lab2/ip/lab2_ALU_0_0/sim/lab2_ALU_0_0.vhd" \
+"../../../bd/lab2/ip/lab2_regfile_0_0/sim/lab2_regfile_0_0.vhd" \
+"../../../bd/lab2/ip/lab2_ALUcntl_0_0/sim/lab2_ALUcntl_0_0.vhd" \
+"../../../bd/lab2/sim/lab2.vhd" \
+
+nosort

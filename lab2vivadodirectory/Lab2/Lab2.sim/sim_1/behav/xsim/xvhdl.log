@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/Documents/School/ECE 445 Lab/Lab2/Lab2.srcs/sources_1/bd/lab2/hdl/lab2_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_wrapper

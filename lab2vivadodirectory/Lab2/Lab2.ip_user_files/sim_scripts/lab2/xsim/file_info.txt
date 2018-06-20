@@ -1,0 +1,13 @@
+lab2_pcadd_1_0.vhd,vhdl,xil_defaultlib,../../../bd/lab2/ip/lab2_pcadd_1_0/sim/lab2_pcadd_1_0.vhd,
+lab2_instmem_0_0.vhd,vhdl,xil_defaultlib,../../../bd/lab2/ip/lab2_instmem_0_0/sim/lab2_instmem_0_0.vhd,
+lab2_control_0_0.vhd,vhdl,xil_defaultlib,../../../bd/lab2/ip/lab2_control_0_0/sim/lab2_control_0_0.vhd,
+lab2_ALU_0_0.vhd,vhdl,xil_defaultlib,../../../bd/lab2/ip/lab2_ALU_0_0/sim/lab2_ALU_0_0.vhd,
+lab2_regfile_0_0.vhd,vhdl,xil_defaultlib,../../../bd/lab2/ip/lab2_regfile_0_0/sim/lab2_regfile_0_0.vhd,
+lab2_ALUcntl_0_0.vhd,vhdl,xil_defaultlib,../../../bd/lab2/ip/lab2_ALUcntl_0_0/sim/lab2_ALUcntl_0_0.vhd,
+lab2_xlslice_0_0.v,verilog,xil_defaultlib,../../../bd/lab2/ip/lab2_xlslice_0_0/sim/lab2_xlslice_0_0.v,
+lab2_xlslice_0_1.v,verilog,xil_defaultlib,../../../bd/lab2/ip/lab2_xlslice_0_1/sim/lab2_xlslice_0_1.v,
+lab2_xlslice_0_2.v,verilog,xil_defaultlib,../../../bd/lab2/ip/lab2_xlslice_0_2/sim/lab2_xlslice_0_2.v,
+lab2_xlslice_0_3.v,verilog,xil_defaultlib,../../../bd/lab2/ip/lab2_xlslice_0_3/sim/lab2_xlslice_0_3.v,
+lab2_xlslice_0_4.v,verilog,xil_defaultlib,../../../bd/lab2/ip/lab2_xlslice_0_4/sim/lab2_xlslice_0_4.v,
+lab2.vhd,vhdl,xil_defaultlib,../../../bd/lab2/sim/lab2.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

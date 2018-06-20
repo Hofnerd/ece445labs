@@ -1,0 +1,46 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 1e9074b53a634993851e7edef9751292 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot lab2_tb_behav xil_defaultlib.lab2_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture lab2_alu_0_0_arch of entity xil_defaultlib.lab2_ALU_0_0 [lab2_alu_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALUcntl [alucntl_default]
+Compiling architecture lab2_alucntl_0_0_arch of entity xil_defaultlib.lab2_ALUcntl_0_0 [lab2_alucntl_0_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_4
+Compiling architecture behavior of entity xil_defaultlib.control [control_default]
+Compiling architecture lab2_control_0_0_arch of entity xil_defaultlib.lab2_control_0_0 [lab2_control_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.instmem [instmem_default]
+Compiling architecture lab2_instmem_0_0_arch of entity xil_defaultlib.lab2_instmem_0_0 [lab2_instmem_0_0_default]
+Compiling architecture behavior of entity xil_defaultlib.pc [pc_default]
+Compiling architecture lab2_pc_0_1_arch of entity xil_defaultlib.lab2_pc_0_1 [lab2_pc_0_1_default]
+Compiling architecture add of entity xil_defaultlib.pcadd [pcadd_default]
+Compiling architecture lab2_pcadd_1_0_arch of entity xil_defaultlib.lab2_pcadd_1_0 [lab2_pcadd_1_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_3
+Compiling architecture behavioral of entity xil_defaultlib.regfile [regfile_default]
+Compiling architecture lab2_regfile_0_0_arch of entity xil_defaultlib.lab2_regfile_0_0 [lab2_regfile_0_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_2
+Compiling architecture structure of entity xil_defaultlib.lab2 [lab2_default]
+Compiling architecture structure of entity xil_defaultlib.lab2_wrapper [lab2_wrapper_default]
+Compiling architecture tb of entity xil_defaultlib.lab2_tb
+Built simulation snapshot lab2_tb_behav
