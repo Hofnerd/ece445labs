@@ -16,12 +16,10 @@ architecture tb of lab2_tb is
     zero : out STD_LOGIC;
     carryout : out STD_LOGIC;
     overflow : out STD_LOGIC
---    pc_test : out STD_LOGIC_VECTOR ( 31 downto 0 );
---    pcadd_test : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component;
 
-	signal tDout, tpct, tpcaddt: std_logic_vector(31 downto 0);
+	signal tDout: std_logic_vector(31 downto 0);
 	signal tci, tco, tclk, tof, treset, tz : std_logic;
 	constant clk_period : time := 20 ns;
 
@@ -34,8 +32,6 @@ begin
 			overflow => tof,
 			reset => treset,
 			zero => tz
---			pc_test => tpct,
---			pcadd_test => tpcaddt
 		);
 
 	clkprocess : process
