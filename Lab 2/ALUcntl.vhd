@@ -12,9 +12,9 @@ begin
 
     with Fn select Cntl <=
         "0010" when "100000", --add
-        "0010" when "100001", --addu
+        "1101" when "100001", --addu
         "0110" when "100010", --sub
-        "0110" when "100011", --subu
+        "1001" when "100011", --subu
         "0000" when "100100", --and
         "0001" when "100101", --or
         "0011" when "100110", --xor
