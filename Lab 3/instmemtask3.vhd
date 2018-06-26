@@ -5,12 +5,12 @@ USE ieee.std_logic_unsigned.all;
 
 
 
-entity instmem is
+entity instmemtask3 is
     Port ( read_inst : in  STD_LOGIC_VECTOR (31 downto 0);
            inst_out : out  STD_LOGIC_VECTOR (31 downto 0));
-end instmem;
+end instmemtask3;
 
-architecture Behavioral of instmem is
+architecture Behavioral of instmemtask3 is
 type instmem is array (0 to 51) of std_logic_vector (7 downto 0);
 signal RAM: instmem:=(x"01",x"28",x"00",x"22",-- 3  1:  sub $zero, $t1, $t0
                       x"01",x"48",x"08",x"22",-- 7  2:  sub $at, $t2, $t0
