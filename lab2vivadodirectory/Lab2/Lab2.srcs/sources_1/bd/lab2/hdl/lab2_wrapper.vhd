@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
---Date        : Tue Jun 19 18:28:59 2018
+--Date        : Thu Jun 28 14:10:23 2018
 --Host        : HofnerdDF running 64-bit major release  (build 9200)
 --Command     : generate_target lab2_wrapper.bd
 --Design      : lab2_wrapper

@@ -1,53 +1,344 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Jun 20 17:23:14 2018
-# Process ID: 277264
-# Current directory: C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent268584 C:\Users\John Rushing\Google Drive\GMU Stuff\ECE 445\git\ece445labs\lab2vivadodirectory\Lab2\Lab2.xpr
-# Log file: C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2/vivado.log
-# Journal file: C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2\vivado.jou
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Jun 28 14:07:36 2018
+# Process ID: 12032
+# Current directory: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13236 C:\Users\Spencer Lombardo\ECE445Labs\ece445labs\lab2vivadodirectory\Lab2\Lab2.xpr
+# Log file: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/vivado.log
+# Journal file: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2/Lab2.xpr}
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2'
+open_project {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.xpr}
 INFO: [Project 1-313] Project file moved from 'C:/Users/Spencer Lombardo/Documents/School/ECE 445 Lab/Lab2' since last save.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/pc.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pc.vhd'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/pcadd.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pcadd.vhd'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/instmem.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/instmem.vhd'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/control.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/control.vhd'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/alu.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/alu.vhd'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/regfile.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/regfile.vhd'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/ALUcntl.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/ALUcntl.vhd'.
-WARNING: [filemgmt 20-922] The BXML file is of a newer version (0.35) then the current supported version (0.33).
-Data could be potentially be lost
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/DFFwEnable.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/DFFwEnable.vhd'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/pcregister.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pcregister.vhd'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/ECE445Labs/ece445labs/Lab 2/lab2_tb.vhd', nor could it be found using path 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/lab2_tb.vhd'.
 Scanning sources...
 Finished scanning sources
-CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2018) not recognized by Vivado. 
-
-CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2018) not recognized by Vivado. 
-
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-WARNING: [BD 41-1663] The design 'lab2.bd' cannot be modified due to following reason(s):
-* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
-
-WARNING: [BD 41-1661] One or more IPs have been locked in the design 'lab2.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
-List of locked IPs:
-lab2_xlslice_0_0
-lab2_xlslice_0_1
-lab2_xlslice_0_2
-lab2_xlslice_0_3
-lab2_xlslice_0_4
-
-WARNING: [Project 1-231] Project 'Lab2.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
-update_compile_order -fileset sim_1
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 816.496 ; gain = 86.645
 update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}
+Adding cell -- xilinx.com:module_ref:pcadd:1.0 - pcadd_1
+Adding cell -- xilinx.com:module_ref:instmem:1.0 - instmem_0
+Adding cell -- xilinx.com:module_ref:control:1.0 - control_0
+Adding cell -- xilinx.com:module_ref:ALU:1.0 - ALU_0
+Adding cell -- xilinx.com:module_ref:regfile:1.0 - regfile_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - Control
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rs
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rt
+Adding cell -- xilinx.com:ip:xlslice:1.0 - rd
+Adding cell -- xilinx.com:ip:xlslice:1.0 - alucntl
+Adding cell -- xilinx.com:module_ref:ALUcntl:1.0 - ALUcntl_0
+Adding cell -- xilinx.com:module_ref:pc:1.0 - pc_0
+Successfully read diagram <lab2> from BD file <C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 885.289 ; gain = 68.793
+regenerate_bd_layout
+update_module_reference lab2_pc_0_1
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd'
+INFO: [IP_Flow 19-1972] Upgraded lab2_pc_0_1 from pc_v1_0 1.0 to pc_v1_0 1.0
+Wrote  : <C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd> 
+Wrote  : <C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/ui/bd_ffb30205.ui> 
+update_module_reference lab2_ALU_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd'
+INFO: [IP_Flow 19-1972] Upgraded lab2_ALU_0_0 from ALU_v1_0 1.0 to ALU_v1_0 1.0
+Wrote  : <C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd> 
+Wrote  : <C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/ui/bd_ffb30205.ui> 
+update_module_reference lab2_ALUcntl_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd'
+INFO: [IP_Flow 19-1972] Upgraded lab2_ALUcntl_0_0 from ALUcntl_v1_0 1.0 to ALUcntl_v1_0 1.0
+Wrote  : <C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd> 
+generate_target all [get_files  {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}}]
+Wrote  : <C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd> 
+VHDL Output written to : C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/synth/lab2.vhd
+VHDL Output written to : C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/sim/lab2.vhd
+VHDL Output written to : C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/hdl/lab2_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pcadd_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block instmem_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ALU_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block regfile_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ALUcntl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Control .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rs .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rt .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block alucntl .
+Exporting to file C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/hw_handoff/lab2.hwh
+Generated Block Design Tcl file C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/hw_handoff/lab2_bd.tcl
+Generated Hardware Definition File C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/synth/lab2.hwdef
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_0] }
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP lab2_xlslice_0_0, cache-ID = d847e27c19b00562.
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_1] }
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP lab2_xlslice_0_1, cache-ID = 74d5ef57f98323b8.
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_2] }
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP lab2_xlslice_0_2, cache-ID = c644d821543d361b.
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_3] }
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP lab2_xlslice_0_3, cache-ID = 93522f77ea857ceb.
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_4] }
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP lab2_xlslice_0_4, cache-ID = 9d3a7d9757bb339d.
+export_ip_user_files -of_objects [get_files {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}}]
+launch_runs -jobs 2 {lab2_pc_0_1_synth_1 lab2_pcadd_1_0_synth_1 lab2_instmem_0_0_synth_1 lab2_control_0_0_synth_1 lab2_ALU_0_0_synth_1 lab2_regfile_0_0_synth_1 lab2_ALUcntl_0_0_synth_1}
+[Thu Jun 28 14:10:39 2018] Launched lab2_pc_0_1_synth_1, lab2_pcadd_1_0_synth_1, lab2_instmem_0_0_synth_1, lab2_control_0_0_synth_1, lab2_ALU_0_0_synth_1, lab2_regfile_0_0_synth_1, lab2_ALUcntl_0_0_synth_1...
+Run output will be captured here:
+lab2_pc_0_1_synth_1: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.runs/lab2_pc_0_1_synth_1/runme.log
+lab2_pcadd_1_0_synth_1: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.runs/lab2_pcadd_1_0_synth_1/runme.log
+lab2_instmem_0_0_synth_1: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.runs/lab2_instmem_0_0_synth_1/runme.log
+lab2_control_0_0_synth_1: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.runs/lab2_control_0_0_synth_1/runme.log
+lab2_ALU_0_0_synth_1: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.runs/lab2_ALU_0_0_synth_1/runme.log
+lab2_regfile_0_0_synth_1: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.runs/lab2_regfile_0_0_synth_1/runme.log
+lab2_ALUcntl_0_0_synth_1: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.runs/lab2_ALUcntl_0_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1024.230 ; gain = 4.262
+export_simulation -of_objects [get_files {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}}] -directory {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files} -ipstatic_source_dir {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.cache/compile_simlib/modelsim} {questa=C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.cache/compile_simlib/questa} {riviera=C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.cache/compile_simlib/riviera} {activehdl=C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pcregister.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pcregister.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/DFFwEnable.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/DFFwEnable.vhd}}
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'lab2_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj lab2_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_0/sim/lab2_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_1/sim/lab2_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_2/sim/lab2_xlslice_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_3/sim/lab2_xlslice_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_4/sim/lab2_xlslice_0_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj lab2_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pc
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/ALUcntl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALUcntl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_pc_0_1/sim/lab2_pc_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_pc_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_pcadd_1_0/sim/lab2_pcadd_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_pcadd_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_instmem_0_0/sim/lab2_instmem_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_instmem_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_control_0_0/sim/lab2_control_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_control_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_ALU_0_0/sim/lab2_ALU_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_ALU_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_regfile_0_0/sim/lab2_regfile_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_regfile_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_ALUcntl_0_0/sim/lab2_ALUcntl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_ALUcntl_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/sim/lab2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/hdl/lab2_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/lab2_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 1e9074b53a634993851e7edef9751292 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot lab2_tb_behav xil_defaultlib.lab2_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture lab2_alu_0_0_arch of entity xil_defaultlib.lab2_ALU_0_0 [lab2_alu_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALUcntl [alucntl_default]
+Compiling architecture lab2_alucntl_0_0_arch of entity xil_defaultlib.lab2_ALUcntl_0_0 [lab2_alucntl_0_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_4
+Compiling architecture behavior of entity xil_defaultlib.control [control_default]
+Compiling architecture lab2_control_0_0_arch of entity xil_defaultlib.lab2_control_0_0 [lab2_control_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.instmem [instmem_default]
+Compiling architecture lab2_instmem_0_0_arch of entity xil_defaultlib.lab2_instmem_0_0 [lab2_instmem_0_0_default]
+Compiling architecture behavior of entity xil_defaultlib.pc [pc_default]
+Compiling architecture lab2_pc_0_1_arch of entity xil_defaultlib.lab2_pc_0_1 [lab2_pc_0_1_default]
+Compiling architecture add of entity xil_defaultlib.pcadd [pcadd_default]
+Compiling architecture lab2_pcadd_1_0_arch of entity xil_defaultlib.lab2_pcadd_1_0 [lab2_pcadd_1_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_3
+Compiling architecture behavioral of entity xil_defaultlib.regfile [regfile_default]
+Compiling architecture lab2_regfile_0_0_arch of entity xil_defaultlib.lab2_regfile_0_0 [lab2_regfile_0_0_default]
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.lab2_xlslice_0_2
+Compiling architecture structure of entity xil_defaultlib.lab2 [lab2_default]
+Compiling architecture structure of entity xil_defaultlib.lab2_wrapper [lab2_wrapper_default]
+Compiling architecture tb of entity xil_defaultlib.lab2_tb
+Built simulation snapshot lab2_tb_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Spencer -notrace
+couldn't read file "C:/Users/Spencer": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Jun 28 14:11:58 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1037.523 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "lab2_tb_behav -key {Behavioral:sim_1:Functional:lab2_tb} -tclbatch {lab2_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source lab2_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Index 55 out of bound 0 to 51
+Time: 270 ns  Iteration: 3  Process: /lab2_tb/comp/lab2_i/instmem_0/U0/line__29
+  File: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/instmem.vhd
+
+HDL Line: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/instmem.vhd:29
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1037.523 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'lab2_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1037.523 ; gain = 0.000
+archive_project {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/Lab2.xpr.zip} -temp_dir {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/.Xil/Vivado-12032-HofnerdDF} -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/.Xil/Vivado-12032-HofnerdDF' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/.Xil/Vivado-12032-HofnerdDF/PrjAr/_X_'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clock': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clock': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_pc_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_pcadd_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_instmem_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_control_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_ALU_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_regfile_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'lab2_ALUcntl_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'lab2_pc_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'lab2_pcadd_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'lab2_instmem_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'lab2_control_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'lab2_ALU_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'lab2_regfile_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'lab2_ALUcntl_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_ALU_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_ALU_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_ALUcntl_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_ALUcntl_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_control_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_control_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_instmem_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_instmem_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_pc_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_pc_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_pcadd_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_pcadd_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'lab2_regfile_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'lab2_regfile_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/Lab2.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:37 . Memory (MB): peak = 1108.859 ; gain = 32.234
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 20 17:23:56 2018...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 28 14:21:21 2018...

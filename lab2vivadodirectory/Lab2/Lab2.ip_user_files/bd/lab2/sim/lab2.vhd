@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
---Date        : Tue Jun 19 16:49:32 2018
+--Date        : Thu Jun 28 14:10:23 2018
 --Host        : HofnerdDF running 64-bit major release  (build 9200)
 --Command     : generate_target lab2.bd
 --Design      : lab2
@@ -46,18 +46,6 @@ architecture STRUCTURE of lab2 is
     dout : out STD_LOGIC
   );
   end component lab2_control_0_0;
-  component lab2_ALU_0_0 is
-  port (
-    A : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    B : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    ALUCntl : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    Carryin : in STD_LOGIC;
-    ALUOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    Zero : out STD_LOGIC;
-    Carryout : out STD_LOGIC;
-    Overflow : out STD_LOGIC
-  );
-  end component lab2_ALU_0_0;
   component lab2_regfile_0_0 is
   port (
     clock : in STD_LOGIC;
@@ -108,6 +96,18 @@ architecture STRUCTURE of lab2 is
     Dout : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component lab2_pc_0_1;
+  component lab2_ALU_0_0 is
+  port (
+    A : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    B : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    ALUCntl : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    Carryin : in STD_LOGIC;
+    ALUOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    Zero : out STD_LOGIC;
+    Carryout : out STD_LOGIC;
+    Overflow : out STD_LOGIC
+  );
+  end component lab2_ALU_0_0;
   component lab2_ALUcntl_0_0 is
   port (
     Fn : in STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -134,38 +134,7 @@ architecture STRUCTURE of lab2 is
   signal rs_Dout : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal rt_Dout : STD_LOGIC_VECTOR ( 4 downto 0 );
 begin
-  Dout(31) <= ALU_0_Zero;
-  Dout(30) <= ALU_0_Zero;
-  Dout(29) <= ALU_0_Zero;
-  Dout(28) <= ALU_0_Zero;
-  Dout(27) <= ALU_0_Zero;
-  Dout(26) <= ALU_0_Zero;
-  Dout(25) <= ALU_0_Zero;
-  Dout(24) <= ALU_0_Zero;
-  Dout(23) <= ALU_0_Zero;
-  Dout(22) <= ALU_0_Zero;
-  Dout(21) <= ALU_0_Zero;
-  Dout(20) <= ALU_0_Zero;
-  Dout(19) <= ALU_0_Zero;
-  Dout(18) <= ALU_0_Zero;
-  Dout(17) <= ALU_0_Zero;
-  Dout(16) <= ALU_0_Zero;
-  Dout(15) <= ALU_0_Zero;
-  Dout(14) <= ALU_0_Zero;
-  Dout(13) <= ALU_0_Zero;
-  Dout(12) <= ALU_0_Zero;
-  Dout(11) <= ALU_0_Zero;
-  Dout(10) <= ALU_0_Zero;
-  Dout(9) <= ALU_0_Zero;
-  Dout(8) <= ALU_0_Zero;
-  Dout(7) <= ALU_0_Zero;
-  Dout(6) <= ALU_0_Zero;
-  Dout(5) <= ALU_0_Zero;
-  Dout(4) <= ALU_0_Zero;
-  Dout(3) <= ALU_0_Zero;
-  Dout(2) <= ALU_0_Zero;
-  Dout(1) <= ALU_0_Zero;
-  Dout(0) <= ALU_0_Zero;
+  Dout(31 downto 0) <= ALU_0_ALUOut(31 downto 0);
   carryin_1 <= carryin;
   carryout <= ALU_0_Carryout;
   clk_1 <= clk;
