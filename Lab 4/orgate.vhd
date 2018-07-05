@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/05/2018 04:41:39 PM
+-- Create Date: 07/05/2018 06:05:46 PM
 -- Design Name: 
--- Module Name: signext - Behavioral
+-- Module Name: orgate - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,14 +31,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity signext is
- Port ( Din : in std_logic_Vector(15 downto 0);                     -- signed is 1, unsigned is 0
-        dout : out std_logic_vector(31 downto 0));
-end signext;
+entity orgate is
+  Port ( d1, d2 : in std_logic;
+         dout : out std_logic);
+end orgate;
 
-architecture Behavioral of signext is
+architecture Behavioral of orgate is
 
 begin
-    dout <= X"FFFF" & Din when (Din(15) = '1') else X"0000"&Din;
+
+dout <= d1 or d2;
 
 end Behavioral;

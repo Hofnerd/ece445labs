@@ -3,6 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity ALUcntl is
     Port ( Fn   : in STD_LOGIC_VECTOR (5 downto 0);
+           ALUop : in std_logic_vector(5 downto 0);
            Cntl : out STD_LOGIC_VECTOR (3 downto 0));
 end ALUcntl;
 
