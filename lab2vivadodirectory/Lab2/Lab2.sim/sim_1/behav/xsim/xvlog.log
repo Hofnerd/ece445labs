@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_0/sim/lab2_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_1/sim/lab2_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_2/sim/lab2_xlslice_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_3/sim/lab2_xlslice_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_4/sim/lab2_xlslice_0_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,12 +1,12 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../../../../ECE445Labs/ece445labs/Lab 2/pc.vhd" \
-"../../../../../../../../ECE445Labs/ece445labs/Lab 2/pcadd.vhd" \
-"../../../../../../../../ECE445Labs/ece445labs/Lab 2/instmem.vhd" \
-"../../../../../../../../ECE445Labs/ece445labs/Lab 2/control.vhd" \
-"../../../../../../../../ECE445Labs/ece445labs/Lab 2/alu.vhd" \
-"../../../../../../../../ECE445Labs/ece445labs/Lab 2/regfile.vhd" \
-"../../../../../../../../ECE445Labs/ece445labs/Lab 2/ALUcntl.vhd" \
+"../../../../../../Lab 2/pc.vhd" \
+"../../../../../../Lab 2/pcadd.vhd" \
+"../../../../../../Lab 2/instmem.vhd" \
+"../../../../../../Lab 2/control.vhd" \
+"../../../../../../Lab 2/alu.vhd" \
+"../../../../../../Lab 2/regfile.vhd" \
+"../../../../../../Lab 2/ALUcntl.vhd" \
 "../../../../Lab2.ip_user_files/bd/lab2/ip/lab2_pc_0_1/sim/lab2_pc_0_1.vhd" \
 "../../../../Lab2.ip_user_files/bd/lab2/ip/lab2_pcadd_1_0/sim/lab2_pcadd_1_0.vhd" \
 "../../../../Lab2.ip_user_files/bd/lab2/ip/lab2_instmem_0_0/sim/lab2_instmem_0_0.vhd" \
@@ -16,7 +16,7 @@ vhdl xil_defaultlib  \
 "../../../../Lab2.ip_user_files/bd/lab2/ip/lab2_ALUcntl_0_0/sim/lab2_ALUcntl_0_0.vhd" \
 "../../../../Lab2.ip_user_files/bd/lab2/sim/lab2.vhd" \
 "../../../../Lab2.srcs/sources_1/bd/lab2/hdl/lab2_wrapper.vhd" \
-"../../../../../../../../ECE445Labs/ece445labs/Lab 2/lab2_tb.vhd" \
+"../../../../../../Lab 2/lab2_tb.vhd" \
 
 # Do not sort compile order
 nosort

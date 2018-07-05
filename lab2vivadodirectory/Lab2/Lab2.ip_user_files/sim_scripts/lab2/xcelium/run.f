@@ -1,4 +1,5 @@
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/lab2/ip/lab2_pc_0_1/sim/lab2_pc_0_1.vhd" \
   "../../../bd/lab2/ip/lab2_pcadd_1_0/sim/lab2_pcadd_1_0.vhd" \
   "../../../bd/lab2/ip/lab2_instmem_0_0/sim/lab2_instmem_0_0.vhd" \
   "../../../bd/lab2/ip/lab2_control_0_0/sim/lab2_control_0_0.vhd" \

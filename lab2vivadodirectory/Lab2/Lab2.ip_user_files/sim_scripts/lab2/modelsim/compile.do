@@ -8,6 +8,7 @@ vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
 vmap xlslice_v1_0_1 modelsim_lib/msim/xlslice_v1_0_1
 
 vcom -work xil_defaultlib -64 -93 \
+"../../../bd/lab2/ip/lab2_pc_0_1/sim/lab2_pc_0_1.vhd" \
 "../../../bd/lab2/ip/lab2_pcadd_1_0/sim/lab2_pcadd_1_0.vhd" \
 "../../../bd/lab2/ip/lab2_instmem_0_0/sim/lab2_instmem_0_0.vhd" \
 "../../../bd/lab2/ip/lab2_control_0_0/sim/lab2_control_0_0.vhd" \

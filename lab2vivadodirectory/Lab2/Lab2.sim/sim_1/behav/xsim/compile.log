@@ -1,4 +1,40 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_0/sim/lab2_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_1/sim/lab2_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_2/sim/lab2_xlslice_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_3/sim/lab2_xlslice_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_xlslice_0_4/sim/lab2_xlslice_0_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab2_xlslice_0_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pc.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity pc
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/Documents/School/ECE 445 Lab/Lab2/Lab2.srcs/sources_1/bd/lab2/hdl/lab2_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/ALUcntl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALUcntl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_pc_0_1/sim/lab2_pc_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_pc_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_pcadd_1_0/sim/lab2_pcadd_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_pcadd_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_instmem_0_0/sim/lab2_instmem_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_instmem_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_control_0_0/sim/lab2_control_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_control_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_ALU_0_0/sim/lab2_ALU_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_ALU_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_regfile_0_0/sim/lab2_regfile_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_regfile_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/ip/lab2_ALUcntl_0_0/sim/lab2_ALUcntl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_ALUcntl_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/bd/lab2/sim/lab2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/hdl/lab2_wrapper.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity lab2_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/lab2_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lab2_tb

@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
---Date        : Tue Jun 19 18:28:59 2018
+--Date        : Thu Jun 28 14:10:22 2018
 --Host        : HofnerdDF running 64-bit major release  (build 9200)
 --Command     : generate_target lab2.bd
 --Design      : lab2
@@ -46,18 +46,6 @@ architecture STRUCTURE of lab2 is
     dout : out STD_LOGIC
   );
   end component lab2_control_0_0;
-  component lab2_ALU_0_0 is
-  port (
-    A : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    B : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    ALUCntl : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    Carryin : in STD_LOGIC;
-    ALUOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    Zero : out STD_LOGIC;
-    Carryout : out STD_LOGIC;
-    Overflow : out STD_LOGIC
-  );
-  end component lab2_ALU_0_0;
   component lab2_regfile_0_0 is
   port (
     clock : in STD_LOGIC;
@@ -100,12 +88,6 @@ architecture STRUCTURE of lab2 is
     Dout : out STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   end component lab2_xlslice_0_4;
-  component lab2_ALUcntl_0_0 is
-  port (
-    Fn : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    Cntl : out STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  end component lab2_ALUcntl_0_0;
   component lab2_pc_0_1 is
   port (
     Din : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -114,6 +96,24 @@ architecture STRUCTURE of lab2 is
     Dout : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component lab2_pc_0_1;
+  component lab2_ALU_0_0 is
+  port (
+    A : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    B : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    ALUCntl : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    Carryin : in STD_LOGIC;
+    ALUOut : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    Zero : out STD_LOGIC;
+    Carryout : out STD_LOGIC;
+    Overflow : out STD_LOGIC
+  );
+  end component lab2_ALU_0_0;
+  component lab2_ALUcntl_0_0 is
+  port (
+    Fn : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    Cntl : out STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  end component lab2_ALUcntl_0_0;
   signal ALU_0_ALUOut : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal ALU_0_Carryout : STD_LOGIC;
   signal ALU_0_Overflow : STD_LOGIC;

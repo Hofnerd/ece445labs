@@ -1,15 +1,37 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Jun 20 17:23:14 2018
-# Process ID: 277264
-# Current directory: C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent268584 C:\Users\John Rushing\Google Drive\GMU Stuff\ECE 445\git\ece445labs\lab2vivadodirectory\Lab2\Lab2.xpr
-# Log file: C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2/vivado.log
-# Journal file: C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2\vivado.jou
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Jun 28 14:07:36 2018
+# Process ID: 12032
+# Current directory: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13236 C:\Users\Spencer Lombardo\ECE445Labs\ece445labs\lab2vivadodirectory\Lab2\Lab2.xpr
+# Log file: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/vivado.log
+# Journal file: C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/John Rushing/Google Drive/GMU Stuff/ECE 445/git/ece445labs/lab2vivadodirectory/Lab2/Lab2.xpr}
-update_compile_order -fileset sim_1
+open_project {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.xpr}
 update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}
+regenerate_bd_layout
+update_module_reference lab2_pc_0_1
+update_module_reference lab2_ALU_0_0
+update_module_reference lab2_ALUcntl_0_0
+generate_target all [get_files  {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}}]
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_0] }
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_1] }
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_2] }
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_3] }
+catch { config_ip_cache -export [get_ips -all lab2_xlslice_0_4] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}}]
+launch_runs -jobs 2 {lab2_pc_0_1_synth_1 lab2_pcadd_1_0_synth_1 lab2_instmem_0_0_synth_1 lab2_control_0_0_synth_1 lab2_ALU_0_0_synth_1 lab2_regfile_0_0_synth_1 lab2_ALUcntl_0_0_synth_1}
+export_simulation -of_objects [get_files {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.srcs/sources_1/bd/lab2/lab2.bd}}] -directory {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files} -ipstatic_source_dir {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.cache/compile_simlib/modelsim} {questa=C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.cache/compile_simlib/questa} {riviera=C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.cache/compile_simlib/riviera} {activehdl=C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/Lab2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pcregister.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/pcregister.vhd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/DFFwEnable.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/DFFwEnable.vhd}}
+launch_simulation
+source lab2_tb.tcl
+archive_project {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/Lab 2/Lab2.xpr.zip} -temp_dir {C:/Users/Spencer Lombardo/ECE445Labs/ece445labs/lab2vivadodirectory/Lab2/.Xil/Vivado-12032-HofnerdDF} -force -include_local_ip_cache -include_config_settings
+close_sim
