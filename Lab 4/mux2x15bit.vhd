@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/05/2018 04:41:00 PM
+-- Create Date: 07/05/2018 08:02:29 PM
 -- Design Name: 
--- Module Name: mux2x1 - Behavioral
+-- Module Name: mux2x15bit - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,20 +31,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity mux2x132bit is
-  Port ( d1, d2 : in std_logic_vector(31 downto 0);
-         sel : in std_logic;
-         dout : out std_logic_vector(31 downto 0));
-end mux2x132bit;
+entity mux2x15bit is
+    Port ( d1 : in STD_LOGIC_VECTOR (4 downto 0);
+           d2 : in STD_LOGIC_VECTOR (4 downto 0);
+           sel : in std_logic;
+           dout : out STD_LOGIC_VECTOR (4 downto 0));
+end mux2x15bit;
 
-architecture Behavioral of mux2x132bit is
+architecture Behavioral of mux2x15bit is
 
 begin
 
-with sel select 
+with sel select
     dout <= d1 when '0',
             d2 when '1',
-            X"00000000" when others;
-            
+            "00000" when others;
+
 
 end Behavioral;
