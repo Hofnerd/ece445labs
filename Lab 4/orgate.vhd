@@ -31,15 +31,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity orgate is
+entity andgate is
   Port ( d1, d2 : in std_logic;
          dout : out std_logic);
-end orgate;
+end andgate;
 
-architecture Behavioral of orgate is
+architecture Behavioral of andgate is
 
 begin
 
-dout <= d1 or d2;
+dout <= d1 and d2;
 
 end Behavioral;
