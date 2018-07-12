@@ -29,21 +29,11 @@ with din select
                '0' when others;
 with din select
     memreg <= '1' when "100011",
+              '1' when "101011",
               '0' when others;
    
   ALUop <= din;
---with din select
---    ALUop <= "100000" when "001000", --Addi
---             "100000" when "001001", --addiu
---             "100100" when "001100", --andi
---             "100101" when "001101", --ori
---             "100000" when "100011", --lw
---             "100000" when "101011", --sw
---             "101010" when "001010", --slti
---             "101011" when "001011", -- sltiu
---             "100010" when "000100", --beq
---             "100010" when "000101", --bne
---             "000000" when others;
+
 with din select
     memwrite <= '1' when "101011",
                 '0' when others;

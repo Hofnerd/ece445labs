@@ -41,27 +41,4 @@ begin
 
 cntl <= fnout when (ALUop = "000000") else aluopout;
 
---    with ALUop&Fn select Cntl <=
---        "0010" when "000000100000", --add
---        "1101" when "000000100001", --addu
---        "0110" when "000000100010", --sub
---        "1001" when "000000100011", --subu
---        "0000" when "000000100100", --and
---        "0001" when "000000100101", --or
---        "0011" when "000000100110", --xor
---        "1100" when "000000100111", --nor
---        "1111" when "000000101010", --slt
---        "1110" when "000000101011", --sltu
---        "0010" when "001000XXXXXX", --addi
---        "0010" when "001001XXXXXX", --addiu
---        "0000" when "001100XXXXXX", -- andi
---        "0001" when "001101XXXXXX", -- ori
---        "0010" when "100011XXXXXX", --lw
---        "0010" when "101011XXXXXX", --sw
---        "0110" when "000100XXXXXX", --beq
---        "0110" when "000101XXXXXX", --bne
---        "0110" when "001010XXXXXX", --slti
---        "0110" when "001011XXXXXX", --sltiu
---        "0000" when others;
-
 end Behavioral;
