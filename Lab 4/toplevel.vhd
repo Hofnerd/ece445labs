@@ -33,11 +33,36 @@ architecture Behavioral of TopLevel_comp is
 	signal clock_sig, clock1_sig, reset_sig : std_logic;
 
 -- component declarations
+component lab4_wrapper is
+  port (
+    carryin : in STD_LOGIC;
+    carryout : out STD_LOGIC;
+    clk : in STD_LOGIC;
+    dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    overflow : out STD_LOGIC;
+    reset : in STD_LOGIC;
+    zero : out STD_LOGIC
+  );
+end component;
+
+signal carryin : std_logic;
+
 --declare your block design wrapper here	
 
 	begin
 	
+	carryin <= '1';
+	
 -- Instantiate your block design wrapper here	
+
+bd : lab4_wrapper port map ( clk => clock,
+                             carryout => carryout,
+                             carryin => carryin,
+                             zero => zero,
+                             reset => reset,
+                             overflow => overflow,
+                             dout => dout1);
+                             
 	   
 
 	----COUNTER FOR DISPLAY CIRCUIT-------------

@@ -10,12 +10,17 @@ entity control is
 	       ALUop : out std_logic_vector( 5 downto 0);
 	       memwrite : out std_logic;
 	       ALUsrc : out std_logic;
-	       Regwrite : out std_logic);
+	       Regwrite : out std_logic;
+	       bnectrl : out std_logic);
 end control;
 
 architecture behavior of control is
 
 begin
+
+with din select 
+    bnectrl <= '1' when "000101",
+               '0' when others;
 
 with din select
     regdst <= '0' when "000000",
@@ -39,6 +44,8 @@ with din select
                 '0' when others;
 with din select
     ALUsrc <= '0' when "000000",
+              '0' when "000100",
+              '0' when "000101",
               '1' when others;
 with din select
     Regwrite <= '0' when "101011",

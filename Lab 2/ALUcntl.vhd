@@ -35,8 +35,8 @@ begin
             "0010" when "101011", --sw
             "0110" when "000100", --beq
             "0110" when "000101", --bne
-            "0110" when "001010", --slti
-            "0110" when "001011", --sltiu
+            "1111" when "001010", --slti
+            "1110" when "001011", --sltiu
             "0000" when others;
 
 cntl <= fnout when (ALUop = "000000") else aluopout;
