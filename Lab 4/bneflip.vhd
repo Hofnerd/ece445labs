@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/05/2018 06:05:46 PM
+-- Create Date: 07/12/2018 08:35:40 PM
 -- Design Name: 
--- Module Name: orgate - Behavioral
+-- Module Name: bneflip - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,15 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity andgate is
-  Port ( d1, d2 : in std_logic;
-         dout : out std_logic);
-end andgate;
+entity bneflip is
+    Port ( bnectrl : in STD_LOGIC;
+           zeroflag : in STD_LOGIC;
+           dout : out STD_LOGIC);
+end bneflip;
 
-architecture Behavioral of andgate is
+architecture Behavioral of bneflip is
 
 begin
 
-dout <= d1 and d2;
+dout <= bnectrl xor zeroflag;
 
 end Behavioral;
