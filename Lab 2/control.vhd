@@ -3,6 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity control is
 	port ( Din : in std_logic_vector( 5 downto 0);
+	       fn : in std_logic_vector(5 downto 0);
 	       Regdst : out std_logic;
 	       Branch : out std_logic;
 	       Memread : out std_logic;
@@ -11,12 +12,23 @@ entity control is
 	       memwrite : out std_logic;
 	       ALUsrc : out std_logic;
 	       Regwrite : out std_logic;
-	       bnectrl : out std_logic);
+	       bnectrl : out std_logic;
+	       jump : out std_logic;
+	       jr : out std_logic);
 end control;
 
 architecture behavior of control is
 
 begin
+
+with din select
+    jump <= '1' when "000010",
+            '1' when "000011",
+            '0' when others;
+
+with din&fn select
+    jr <= '1' when "000000001000",
+          '0' when others;
 
 with din select 
     bnectrl <= '1' when "000101",
